@@ -12,7 +12,7 @@
 * `pipenv shell` ==> goes into the shell , start virtual env
 * `cat Pipfile` ==>  where we say what version of python we want
 * `pipenv install django` ==> install django
-* `django-admin startproject djorg .` ==> djorg is projectName notice mange.py
+* `django-admin startproject djorg .` ==> djorg is projectName notice mange.py " this line create file called djorg"
 * `django-admin startapp notes` ==> make app within hte project
 * `./manage.py runserver` ==> start the server
 * `./manage.py showmigrations` ==> show migrations applied and not applied
@@ -25,7 +25,7 @@
 ***
 
 * `./manage.py showmigrations`
-* `./manage.py makemigrations`  ==> **gnerate** migrations
+* `./manage.py makemigrations`  ==> generate migrations
 * `./manage.py showmigrations`
 * `./manage.py migrate`  ==> migrate the table up
 * `./manage.py shell`
