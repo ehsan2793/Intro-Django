@@ -3,37 +3,44 @@
 ## Summary
 
 * Get pipenv installed
+* `pip install pipenv`
 * Clone your repo
   * (If you cloned the Hello-Django repo, delete the file `requirements.txt`!)
 * Go to your repo root directory
-* `pipenv --three`
-* `pipenv install`
-* `pipenv shell`
-* `pipenv install django`
-* `django-admin startproject djorg .`
-* `django-admin startapp notes`
+* `pipenv --three`  ==> creates pipfile
+* `pipenv install` ==> create pipfile.lock
+* `pipenv shell` ==> goes into the shell , start virtual env
+* `cat Pipfile` ==>  where we say what version of python we want
+* `pipenv install django` ==> install django
+* `django-admin startproject djorg .` ==> djorg is projectName notice mange.py
+* `django-admin startapp notes` ==> make app within hte project
+* `./manage.py runserver` ==> start the server
+* `./manage.py showmigrations` ==> show migrations applied and not applied
+* `./manage.py migrate` ==> applying migrations if they are not already applied
 * `./manage.py runserver`
-* `./manage.py showmigrations`
-* `./manage.py migrate`
-* `./manage.py runserver`
-* Add model to `notes/models.py`
+  ____
+* Add model to `notes/models.py`   go in here  and make the table
+  ___
 * Add `'notes'` to `INSTALLED_APPS` in `djorg/settings.py`
+***
+
 * `./manage.py showmigrations`
-* `./manage.py makemigrations`
+* `./manage.py makemigrations`  ==> **gnerate** migrations
 * `./manage.py showmigrations`
-* `./manage.py migrate`
+* `./manage.py migrate`  ==> migrate the table up
 * `./manage.py shell`
   * `from notes.models import Note`
   * `n = Note(title="example", content="This is a test.")`
-  * `n.save()`
+  * `n.save()` ==> save our input into sequl database
   * `exit()`
 * `./manage.py shell`
   * `from notes.models import Note`
-  * `x = Note.objects.all()`
+  * `x = Note.objects.all()` ==> return all node object in the database
   * `x[0]`
   * `x[0].content`
   * `exit()`
-* `pipenv install python-decouple`
+  
+* `pipenv install python-decouple`  
 * Add config information to `settings.py` and `.env`
     
 
