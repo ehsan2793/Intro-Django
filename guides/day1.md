@@ -25,7 +25,7 @@
 ***
 
 * `./manage.py showmigrations`
-* `./manage.py makemigrations`  ==> generate migrations
+* `./manage.py makemigrations`  ==> generate migrations and start our table
 * `./manage.py showmigrations`
 * `./manage.py migrate`  ==> migrate the table up
 * `./manage.py shell`
